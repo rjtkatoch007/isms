@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res)=>{
-    app.json("Welcome to iSMS APP");
+    res.json({message: "Welcome to iSMS APP"});
 })
 
 app.listen(3000, ()=>{
