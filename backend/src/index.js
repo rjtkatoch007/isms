@@ -5,7 +5,7 @@ import clerkWebhook from "./webhooks/clerk.webhook.js"
 import "dotenv/config"
 import fs from "fs";
 import path from "path";
-
+import job from "./lib/cron.js";
 import { connectDB } from "./lib/db.js";
 const app = express();
 const PORT = process.env.PORT;
